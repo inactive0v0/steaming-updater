@@ -1,0 +1,12 @@
+#!/bin/bash
+function send_cmd()
+{
+  check screen
+  COMMAND="$1"
+  SESSION=""
+  WINDOW="-"
+  [ -n "$1" ] || error "send_cmd:No command spcified."
+  [ -n "$2" ] && SESSION="$2"
+  [ -n "$3" ] && WINDOW="$3"
+  screen -r $SESSION -p $WINDOW -X stuff "^E^U^M$COMMAND^M"
+}

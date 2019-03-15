@@ -1,0 +1,21 @@
+#!/bin/bash
+source $ROT/plugins/dstds.conf
+APP_ID=343050
+
+function restart()
+{
+  send_cmd "c_shutdown()" $SESSION $WINDOW
+	for i in {1..10}; do
+	sleep 10
+	tail -n 1 $SERVER_LOG | grep 'Shutting down' && break
+	[ $i = "10" ] && error '服务器未正常关闭'
+  done
+  send_cmd "$START_SCRIPT" $SESSION $WINDOW
+}
+
+function plugin_check()
+{
+	check "$INSTALL_DIR/version.txt"
+	check "$SERVER_LOG"
+	check "$START_SCRIPT"
+}

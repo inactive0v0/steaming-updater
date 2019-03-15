@@ -1,0 +1,13 @@
+#!/bin/bash
+function send_cmd()
+{
+  check tmux
+  COMMAND="$1"
+  SESSION=""
+  WINDOW="0"
+  PANE="0"
+  [ -n "$1" ] || error "send_cmd:No command spcified."
+  [ -n "$2" ] && SESSION="$2"
+  [ -n "$3" ] && WINDOW="$3"
+  tmux send-keys -t $SESSION:$WINDOW ^E ^U ^M "$COMMAND" ^M
+}
