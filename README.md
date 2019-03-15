@@ -11,12 +11,12 @@
 ## 支持的服务端
 | 服务端     | 插件名称 |
 | ---------- | -------- |
-| 饥荒联机版 | dstds    |
+| [饥荒联机版](https://github.com/inactive-virus/steaming-updater/wiki/%E6%8F%92%E4%BB%B6:%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E7%AB%AF) | dstds    |
 | ……         | ……       |
 
 ## 使用方法
 
-首先编辑`updater.conf`和`plugins/`目录下的对应conf文件，写入需要的信息（详见本repo的Wiki）；
+首先编辑`updater.conf`和`plugins/`目录下的对应conf文件，写入需要的信息（详见本repo的[Wiki](https://github.com/inactive-virus/steaming-updater/wiki)）；
 
 运行：`./steaming_updater.sh <Shell> <Plugin>`
 
