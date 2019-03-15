@@ -1,6 +1,6 @@
 #!/bin/bash
-# Author: inactive_virus <gigagerm@hotmail.com>
-# Source: https://github.com/inactive-virus/steaming_updater
+# Author: inactive-virus <gigagerm@hotmail.com>
+# Source: https://github.com/inactive-virus/steaming-updater
 
 function error()
 {
