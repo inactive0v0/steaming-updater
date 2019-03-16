@@ -11,7 +11,7 @@
 ## 支持的服务端
 | 服务端     | 插件名称 |
 | ---------- | -------- |
-| [饥荒联机版](https://github.com/inactive-virus/steaming-updater/wiki/%E6%8F%92%E4%BB%B6:%E9%A5%A5%E8%8D%92%E6%9C%8D%E5%8A%A1%E7%AB%AF) | dstds    |
+| [饥荒联机版](https://github.com/inactive-virus/steaming-updater/wiki/%E6%8F%92%E4%BB%B6:%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88) | dstds    |
 | ……         | ……       |
 
 ## 使用方法
