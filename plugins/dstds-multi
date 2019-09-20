@@ -1,4 +1,5 @@
 #!/bin/bash
+source $ROT/plugins/dstds-multi.conf
 APP_ID=343050
 
 function restart()
