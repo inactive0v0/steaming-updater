@@ -17,7 +17,7 @@ function check()
 
 function dump()
 {
-  [ -n "$1" ] && echo "$1" > $ROT/err_`date +"%Y-%m-%d %T"`.log
+  [ -n "$1" ] && echo "$1" > $ROT/err_`date +"%Y-%m-%d-%T"`.log
   [ -n "$2" ] && error "$2"
 }
 
